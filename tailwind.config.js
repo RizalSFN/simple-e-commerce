@@ -9,7 +9,11 @@ export default {
         "./node_modules/flowbite/**/*.js",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                comfortaa: ["Comfortaa"],
+            },
+        },
         colors: {
             primary: "#ffa217",
             secondary: "#0f172b",

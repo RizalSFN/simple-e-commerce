@@ -2,7 +2,7 @@
 
 @section('container')
     {{-- HOME SECTION --}}
-    <div id="home">
+    <section id="home">
         <div class="absolute w-full flex justify-around items-center h-full">
             <div>
                 <h1 class="font-extrabold font-comfortaa text-primary text-5xl tracking-wide">Enjoy your</h1>
@@ -18,7 +18,7 @@
         {{-- BACKGROUND IMAGE --}}
         <img src="{{ asset('assets/img/background-image.jpg') }}" class="w-full opacity-10" alt="background-image">
 
-    </div>
+    </section>
 
     {{-- UP ARROW --}}
     <a href="#home"
@@ -52,17 +52,16 @@
                 <ul
                     class="flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                     <li>
-                        <a href="#home" class="block py-2 px-3 rounded text-white hover:text-primary"
-                            aria-current="page">Home</a>
+                        <a id="nav-link" href="#home" class="block py-2 px-3 rounded">Home</a>
                     </li>
                     <li>
-                        <a href="#about" class="block py-2 px-3 text-white rounded hover:text-primary">About</a>
+                        <a id="nav-link" href="#about" class="block py-2 px-3 rounded">About</a>
                     </li>
                     <li>
-                        <a href="#product" class="block py-2 px-3 text-white rounded hover:text-primary">Product</a>
+                        <a id="nav-link" href="#product" class="block py-2 px-3 rounded">Product</a>
                     </li>
                     <li>
-                        <a href="#seller" class="block py-2 px-3 text-white rounded hover:text-primary">Seller</a>
+                        <a id="nav-link" href="#seller" class="block py-2 px-3 rounded">Seller</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +69,7 @@
     </nav>
 
     {{-- ABOUT SECTION --}}
-    <div class="bg-white" id="about">
+    <section class="bg-white" id="about">
         <h1 class="text-3xl pt-20 pb-5 font-comfortaa font-bold text-secondary text-center w-full">INCREASE IN 2024</h1>
         <div class="flex flex-wrap justify-around items-center py-10">
             <a href="#"
@@ -109,10 +108,10 @@
             <img src="{{ asset('assets/img/jntcargo.jpg') }}" alt="jnt" class="h-20 mx-10">
             <img src="{{ asset('assets/img/gosend.jpg') }}" alt="jnt" class="h-28 mx-10">
         </div>
-    </div>
+    </section>
 
     {{-- PRODUCT SECTION --}}
-    <div id="product" class="bg-secondary h-screen flex py-10 px-20 justify-around items-center">
+    <section id="product" class="bg-secondary h-screen flex py-10 px-20 justify-around items-center">
         <div class="w-3/12">
             <h1 class="text-4xl font-comfortaa font-bold text-primary w-full">BEST</h1>
             <h1 class="text-4xl font-comfortaa font-bold text-primary w-full">SELLING</h1>
@@ -271,22 +270,48 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     {{-- SELLER SECTION --}}
-    <div id="seller" class="bg-white flex h-screen justify-around items-center">
-        <div class="w-5/12 border text-secondary px-10">
+    <section id="seller" class="bg-white flex h-screen justify-around items-center">
+        <div class="w-5/12 text-secondary px-10">
             <h1 class="text-4xl font-bold tracking-wide font-comfortaa w-full">JOIN AND</h1>
             <h1 class="text-4xl font-bold tracking-wide font-comfortaa w-full">BECOME A SELLER</h1>
         </div>
-        <div class="text-secondary">
-            p
-            {{-- form join seller --}}
+        <div class="w-5/12">
+            <form action="" method="" class="block w-full px-6 pt-10 pb-5 bg-secondary rounded-lg shadow">
+                <h1 class="font-bold text-xl font-comfortaa uppercase text-center w-full">Let's join with us!</h1>
+                <div class="relative mt-7">
+                    <input type="text" id="floating_outlined"
+                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer"
+                        placeholder=" " />
+                    <label for="floating_outlined"
+                        class="absolute text-sm text-white duration-300 bg-secondary transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Full
+                        Name</label>
+                </div>
+                <div class="relative my-5">
+                    <input type="text" id="floating_outlined"
+                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer"
+                        placeholder=" " />
+                    <label for="floating_outlined"
+                        class="absolute text-sm text-white duration-300 bg-secondary transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Email
+                        Address</label>
+                </div>
+                <div class="relative">
+                    <input type="text" id="floating_outlined"
+                        class="block px-2.5 pb-2.5 pt-4 w-full text-sm text-white bg-transparent rounded-lg border-1 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-primary peer"
+                        placeholder=" " />
+                    <label for="floating_outlined"
+                        class="absolute text-sm text-white duration-300 bg-secondary transform -translate-y-4 scale-75 top-2 z-10 origin-[0] px-2 peer-focus:px-2 peer-focus:text-white peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 peer-focus:top-2 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto start-1">Telephone</label>
+                </div>
+                <button type="button"
+                    class="text-blue-700 mt-5 w-3/12 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Submit</button>
+            </form>
         </div>
-    </div>
+    </section>
 
     {{-- FOOTER SECTION --}}
-    <footer class="bg-secondary h-screen">
+    <footer class="bg-secondary">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
             <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
@@ -347,12 +372,12 @@
                 </div>
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-            <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-                        href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+            <div class="pe-16 sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a
+                        href="https://flowbite.com/" class="hover:underline">AyaMart</a>. All Rights Reserved.
                 </span>
                 <div class="flex mt-4 sm:justify-center sm:mt-0">
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <a href="#" class="text-gray-500 hover:text-primary dark:hover:text-white">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 8 19">
                             <path fill-rule="evenodd"
@@ -361,7 +386,7 @@
                         </svg>
                         <span class="sr-only">Facebook page</span>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <a href="#" class="text-gray-500 hover:text-primary dark:hover:text-white ms-5">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 21 16">
                             <path
@@ -369,16 +394,8 @@
                         </svg>
                         <span class="sr-only">Discord community</span>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 17">
-                            <path fill-rule="evenodd"
-                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Twitter page</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
+                    <a href="https://github.com/RizalSFN"
+                        class="text-gray-500 hover:text-primary dark:hover:text-white ms-5">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
@@ -386,15 +403,6 @@
                                 clip-rule="evenodd" />
                         </svg>
                         <span class="sr-only">GitHub account</span>
-                    </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5">
-                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                            viewBox="0 0 20 20">
-                            <path fill-rule="evenodd"
-                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        <span class="sr-only">Dribbble account</span>
                     </a>
                 </div>
             </div>
@@ -416,6 +424,30 @@
                     arrow.classList.add('hidden')
                 }
             })
+
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#nav-link');
+
+            window.addEventListener('scroll', function() {
+                let currentSection = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-primary');
+                    link.classList.add('text-white');
+                    link.classList.add('hover:text-primary');
+                    if (link.getAttribute('href').includes(currentSection)) {
+                        link.classList.add('text-primary');
+                    }
+                });
+            });
         })
     </script>
 @endsection

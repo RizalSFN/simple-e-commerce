@@ -374,7 +374,7 @@
                 </div>
                 <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-primary uppercase dark:text-white">Others</h2>
+                        <h2 class="mb-6 text-sm font-semibold text-primary uppercase dark:text-white">Creator</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4 flex items-center">
                                 <i class="bi bi-geo-alt-fill me-3"></i>
@@ -387,7 +387,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 mt-8 md:mt-0 lg:mt-0">
                     <div>
                         <h2 class="mb-6 text-sm font-semibold text-primary uppercase dark:text-white">Resources</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">

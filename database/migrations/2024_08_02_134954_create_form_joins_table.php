@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('expeditions', function (Blueprint $table) {
+        Schema::create('form_joins', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->decimal('rate', 10); // rate harga per kg
-            $table->text('description');
+            $table->string('full_name');
+            $table->string('email')->unique();
+            $table->string('telephone', 20)->unique();
+            $table->enum('status', ['approved', 'waiting', 'cancelled']);
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('expeditions');
+        Schema::dropIfExists('form_joins');
     }
 };

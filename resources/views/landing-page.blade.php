@@ -108,11 +108,11 @@
                     </li>
                     <li>
                         <a href="#product"
-                            class="block py-2 px-3 text-white hover:text-primary md:hover:text-primary lg:hover:text-primary lg:hover:bg-transparent hover:bg-gray-800 rounded md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            class="block py-2 px-3 text-white hover:text-primary md:hover:text-primary lg:hover:text-primary lg:hover:bg-transparent hover:bg-gray-800 rounded md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Products</a>
                     </li>
                     <li>
                         <a href="#seller"
-                            class="block py-2 px-3 text-white hover:text-primary md:hover:text-primary lg:hover:text-primary lg:hover:bg-transparent hover:bg-gray-800 rounded md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            class="block py-2 px-3 text-white hover:text-primary md:hover:text-primary lg:hover:text-primary lg:hover:bg-transparent hover:bg-gray-800 rounded md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Seller</a>
                     </li>
                 </ul>
             </div>

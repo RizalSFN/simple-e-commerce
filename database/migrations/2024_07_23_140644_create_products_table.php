@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedMediumInteger('stok');
             $table->text('description');
             $table->decimal('price', 10);
-            $table->string('photo');
+            $table->string('photo')->nullable();
             $table->unsignedBigInteger('seller_id');
             $table->enum('status', ['ready', 'out_of_stock', 'unready']);
             $table->timestamps();

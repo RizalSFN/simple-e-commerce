@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('form_joins', function (Blueprint $table) {
             $table->id();
-            $table->string('full_name');
+            $table->string('fullname');
             $table->string('email')->unique();
             $table->string('telephone', 20)->unique();
             $table->enum('status', ['approved', 'waiting', 'cancelled']);

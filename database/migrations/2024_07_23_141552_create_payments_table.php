@@ -15,8 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->text('description');
-            $table->decimal('handling_fee', 10);
-            $table->string('photo');
+            $table->decimal('service_fee', 10);
             $table->timestamps();
         });
     }

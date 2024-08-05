@@ -17,8 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('delivery_id');
             $table->unsignedBigInteger('expedition_id');
             $table->unsignedBigInteger('payment_id');
-            $table->decimal('delivery_fee', 10);
-            $table->decimal('expedition_fee', 10);
+            $table->decimal('delivery_service_fee', 10);
+            $table->decimal('expedition_service_fee', 10);
+            $table->decimal('payment_service_fee', 10);
             $table->decimal('sub_total', 10);
             $table->decimal('total_payment', 10);
             $table->text('sender_address');

@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class FormJoin extends Model
 {
     use HasFactory;
+
+    protected $table = 'form_joins';
+    protected $fillable = [
+        'fullname',
+        'email',
+        'telephone',
+        'status'
+    ];
 }

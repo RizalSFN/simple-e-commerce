@@ -19,7 +19,7 @@ return new class extends Migration
             $table->text('decription');
             $table->timestamps();
             $table->foreign('user_id')->references('id')->on('users');
-            $table->foreign('products_id')->references('id')->on('products');
+            $table->foreign('order_id')->references('id')->on('orders');
         });
     }
 

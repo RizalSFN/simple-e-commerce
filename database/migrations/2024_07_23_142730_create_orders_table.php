@@ -20,8 +20,8 @@ return new class extends Migration
             $table->decimal('delivery_service_fee', 10);
             $table->decimal('expedition_service_fee', 10);
             $table->decimal('payment_service_fee', 10);
-            $table->decimal('sub_total', 10);
-            $table->decimal('total_payment', 10);
+            $table->decimal('sub_total', 10)->nullable();
+            $table->decimal('total_payment', 10)->nullable();
             $table->text('sender_address');
             $table->text('destination_address');
             $table->enum('status', ['ordered', 'confirmed', 'delivered', 'finished', 'canceled']);

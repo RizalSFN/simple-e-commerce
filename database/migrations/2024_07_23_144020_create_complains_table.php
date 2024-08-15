@@ -18,6 +18,8 @@ return new class extends Migration
             $table->enum('type', ['product', 'delivery', 'seller', 'payment']);
             $table->text('decription');
             $table->timestamps();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('products_id')->references('id')->on('products');
         });
     }
 

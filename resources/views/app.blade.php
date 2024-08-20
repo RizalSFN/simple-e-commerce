@@ -21,6 +21,8 @@
 
 <body class="bg-secondary text-white" id="body">
     @yield('container')
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="{{ asset('assets/js/chart.js') }}"></script>
 </body>
 
 </html>
